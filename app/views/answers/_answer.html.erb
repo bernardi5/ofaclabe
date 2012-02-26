@@ -1,0 +1,20 @@
+<p>
+  <b>Title:</b>
+  <%= answer.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= answer.body %>
+</p>
+
+<p>
+  <%= link_to 'Edit Answer', [answer.question, answer]
+   %>
+</p>
+
+<p>
+  <%= link_to 'Destroy Answer', [answer.question, answer],
+               :confirm => 'Are you sure?',
+               :method => :delete %>
+</p>

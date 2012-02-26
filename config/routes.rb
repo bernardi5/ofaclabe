@@ -1,5 +1,9 @@
 Ofa::Application.routes.draw do
-  resources :questions
+
+
+  resources :questions  do
+    resources :answers
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
